@@ -33,8 +33,8 @@ Server will Generate the following log on successful startup:
 
 ```json
 { 
-    type: 'startup_message',
-    data: 'Server is listening on port 8080' 
+    "type": "startup_message",
+    "data": "Server is listening on port 8080" 
 }
 ```
 
@@ -132,12 +132,12 @@ A log message will be generated such as:
 
 ```json
 { 
-    type: 'validation_request',
-    data: { 
-        method: 'POST',
-        endpoint: '/validate',
-        spec:'{"display":"form","components":[{"label":"Text Field","allowMultipleMasks":false,"showWordCount":false,"showCharCount":false,"tableView":true,"alwaysEnabled":false,"type":"textfield","input":true,"key":"textField2","defaultValue":"","validate":{"customMessage":"","json":"","required":true},"conditional":{"show":"","when":"","json":""},"inputFormat":"plain","encrypted":false,"properties":{},"customConditional":"","logic":[],"attributes":{},"widget":{"type":""},"reorder":false},{"type":"button","label":"Submit","key":"submit","disableOnInvalid":true,"theme":"primary","input":true,"tableView":true}],"settings":{}}',
-        raw_submission: '{"data":{"textField2":"222"},"metadata":{}}' 
+    "type": 'validation_request',
+    "data": { 
+        "method": 'POST',
+        "endpoint": '/validate',
+        "spec":'{"display":"form","components":[{"label":"Text Field","allowMultipleMasks":false,"showWordCount":false,"showCharCount":false,"tableView":true,"alwaysEnabled":false,"type":"textfield","input":true,"key":"textField2","defaultValue":"","validate":{"customMessage":"","json":"","required":true},"conditional":{"show":"","when":"","json":""},"inputFormat":"plain","encrypted":false,"properties":{},"customConditional":"","logic":[],"attributes":{},"widget":{"type":""},"reorder":false},{"type":"button","label":"Submit","key":"submit","disableOnInvalid":true,"theme":"primary","input":true,"tableView":true}],"settings":{}}',
+        "raw_submission": '{"data":{"textField2":"222"},"metadata":{}}' 
     } 
 }
 ```

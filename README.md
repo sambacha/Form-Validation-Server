@@ -16,6 +16,11 @@ You a application let [Postman](https://www.getpostman.com) to test validations.
 
 ----
 
+# Install
+
+Go to `app` folder. Run `npm install`
+This will download all of the deps (mainly the Formio dependencies)
+
 # Start Server:
 
 `node app/src/server.js`

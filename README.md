@@ -11,8 +11,7 @@ It is up to you to implement schema storage and returning the results of the val
 
 **It is expected that this validation server is a internal microservice, and should never be exposed directly to the client**
 
-Use the online [Formio Builder](https://formio.github.io/formio.js/app/builder) for a quick sampler to build.
-You a application let [Postman](https://www.getpostman.com) to test validations. 
+Use the online [Formio Builder](https://formio.github.io/formio.js/app/builder) to quickly and easily build a Form Schema.  Then use a application such as [Postman](https://www.getpostman.com) to test validations against the REST API endpoint.
 
 ----
 

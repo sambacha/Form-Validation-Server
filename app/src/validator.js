@@ -21,7 +21,7 @@ function validate(req, res, next){
     // allowing the JWT to be passed into subsequent API calls
     const token = "";
 
-    const validator = new Validator(validationRequest.spec, submissionModel, token);
+    const validator = new Validator(validationRequest.schema, submissionModel, token);
 
     validator.validate(body, (err, submission) => {
         if (err){

@@ -10,7 +10,7 @@ const logValidationRequest = (req, res, next) => {
         let request = {
             "method": req.method,
             "endpoint": req.originalUrl,
-            "spec": JSON.stringify(req.body.spec),
+            "schema": JSON.stringify(req.body.schema),
             "raw_submission": JSON.stringify(req.body.submission)
         };
         let requestLog = {

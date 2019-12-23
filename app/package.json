@@ -1,8 +1,7 @@
 {
-  "name": "ds-form-validation-server",
+  "name": "form-validation-server",
   "version": "0.5.0",
   "scripts": {
-    "build": "webpack",
     "start:dev": "node src/server",
     "start": "node dist/server"
   },
@@ -11,10 +10,7 @@
     "core-js": "^3.2.1",
     "express": "^4.17.1",
     "cors": "^2.8.5",
-    "formio": "^1.50.0"
+    "formio": "^1.63.5"
   },
-  "devDependencies": {
-    "webpack": "^4.39.2",
-    "webpack-cli": "^3.3.6"
-  }
+  "devDependencies": {}
 }

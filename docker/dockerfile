@@ -1,0 +1,19 @@
+FROM node:8-alpine as build
+
+RUN apk --update add alpine-sdk npm
+
+WORKDIR /usr/src
+
+COPY . .
+
+RUN npm install
+
+FROM oracle/graalvm-ce:19.2.0
+
+RUN mkdir -p /usr/src
+
+WORKDIR /usr/src
+
+COPY --from=build /usr/src/ .
+
+CMD node server.js

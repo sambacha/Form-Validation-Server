@@ -1,16 +1,16 @@
 {
   "name": "form-validation-server",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "scripts": {
     "start:dev": "node src/server",
     "start": "node dist/server"
   },
   "private": true,
   "dependencies": {
-    "core-js": "^3.2.1",
+    "core-js": "^3.6.4",
     "express": "^4.17.1",
     "cors": "^2.8.5",
-    "formio": "^1.63.5"
+    "formio": "^1.72.0"
   },
   "devDependencies": {}
 }

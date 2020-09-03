@@ -1,4 +1,5 @@
-const Validator = require('formio/src/resources/Validator.js');
+const Validator = require('formio/src/resources/Validator');
+const hook = require('formio/src/util/hook')({});
 
 // a dumb var to fill the role of the database lookup.
 // submission model would have been used to check for certain values such as:
@@ -21,11 +22,14 @@ function validate(req, res, next){
     // allowing the JWT to be passed into subsequent API calls
     const token = "";
 
-    const validator = new Validator(validationRequest.schema, submissionModel, token);
+    const _Validator = Validator
+    _Validator.setHook(hook)
+    const validator = new _Validator(validationRequest.schema, submissionModel, {}, {});
+
 
     validator.validate(body, (err, submission) => {
         if (err){
-            // console.log(err); // Used mainly for debug
+            console.log(err); // Used mainly for debug
             // The details are joined together because they usually are returned as a array,
             // which is not the required format for the Formio UI:
             err.details.forEach(detail=> {
